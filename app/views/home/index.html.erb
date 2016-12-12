@@ -1,0 +1,9 @@
+<% photo = Unsplash::Photo.all%>
+
+    <body >
+        <section>
+			<% photo.each do |photo| %>
+				<img src="<%= photo.urls['full']%>">
+			<% end %>
+        </section>
+    </body>
